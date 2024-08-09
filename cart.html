@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <title>Organic - Grocery Store HTML Website Template</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/vendor.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&amp;family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+
+
+  <div class="preloader-wrapper">
+    <div class="preloader">
+    </div>
+  </div>
+
+  <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasCart">
+    <div class="offcanvas-header justify-content-center">
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="order-md-last">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+          <span class="text-primary">Your cart</span>
+          <span class="badge bg-primary rounded-pill">3</span>
+        </h4>
+        <ul class="list-group mb-3">
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Growers cider</h6>
+              <small class="text-body-secondary">Brief description</small>
+            </div>
+            <span class="text-body-secondary">$12</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Fresh grapes</h6>
+              <small class="text-body-secondary">Brief description</small>
+            </div>
+            <span class="text-body-secondary">$8</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Heinz tomato ketchup</h6>
+              <small class="text-body-secondary">Brief description</small>
+            </div>
+            <span class="text-body-secondary">$5</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Total (USD)</span>
+            <strong>$20</strong>
+          </li>
+        </ul>
+        <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasSearch">
+    <div class="offcanvas-header justify-content-center">
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="order-md-last">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+          <span class="text-primary">Search</span>
+        </h4>
+        <form role="search" action="https://demo.templatesjungle.com/organic/index.html" method="get"
+          class="d-flex mt-3 gap-0">
+          <input class="form-control rounded-start rounded-0 bg-light" type="email"
+            placeholder="What are you looking for?" aria-label="What are you looking for?">
+          <button class="btn btn-dark rounded-end rounded-0" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar">
+
+    <div class="offcanvas-header justify-content-between">
+      <h4 class="fw-normal text-uppercase fs-6">Menu</h4>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <div class="offcanvas-body">
+
+      <ul class="navbar-nav justify-content-end menu-list list-unstyled d-flex gap-md-3 mb-0">
+
+        <li class="nav-item border-dashed">
+          <button
+            class="btn btn-toggle dropdown-toggle w-100 d-flex justify-content-between align-items-center text-dark p-2"
+            data-bs-toggle="collapse" data-bs-target="#beverages-collapse" aria-expanded="false">
+            <div class="d-flex gap-3">
+              <svg width="24" height="24" viewBox="0 0 24 24">
+                <use xlink:href="#beverages"></use>
+              </svg>
+              <span>Beverages</span>
+            </div>
+          </button>
+          <div class="collapse" id="beverages-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal ps-5 pb-1">
+              <li class="border-bottom py-2"><a href="shop.html" class="dropdown-item">Water</a></li>
+              <li class="border-bottom py-2"><a href="shop.html" class="dropdown-item">Juice</a></li>
+              <li class="border-bottom py-2"><a href="shop.html" class="dropdown-item">Soda</a></li>
+              <li class="border-bottom py-2"><a href="shop.html" class="dropdown-item">Tea</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item border-dashed">
+          <a href="shop.html" class="nav-link d-flex align-items-center gap-3 text-dark p-2">
+            <svg width="24" height="24" viewBox="0 0 24 24">
+              <use xlink:href="#spices"></use>
+            </svg>
+            <span>Spices and Seasonings</span>
+          </a>
+        </li>
+        <li class="nav-item border-dashed">
+          <a href="shop.html" class="nav-link d-flex align-items-center gap-3 text-dark p-2">
+            <svg width="24" height="24" viewBox="0 0 24 24">
+              <use xlink:href="#baby"></use>
+            </svg>
+            <span>Baby Food and Formula</span>
+          </a>
+        </li>
+        <li class="nav-item border-dashed">
+          <a href="shop.html" class="nav-link d-flex align-items-center gap-3 text-dark p-2">
+            <svg width="24" height="24" viewBox="0 0 24 24">
+              <use xlink:href="#health"></use>
+            </svg>
+            <span>Health and Wellness</span>
+          </a>
+        </li>
+        <li class="nav-item border-dashed">
+          <a href="shop.html" class="nav-link d-flex align-items-center gap-3 text-dark p-2">
+            <svg width="24" height="24" viewBox="0 0 24 24">
+              <use xlink:href="#household"></use>
+            </svg>
+            <span>Household Supplies</span>
+          </a>
+        </li>
+        <li class="nav-item border-dashed">
+          <a href="shop.html" class="nav-link d-flex align-items-center gap-3 text-dark p-2">
+            <svg width="24" height="24" viewBox="0 0 24 24">
+              <use xlink:href="#personal"></use>
+            </svg>
+            <span>Personal Care</span>
+          </a>
+        </li>
+        <li class="nav-item border-dashed">
+          <a href="shop.html" class="nav-link d-flex align-items-center gap-3 text-dark p-2">
+            <svg width="24" height="24" viewBox="0 0 24 24">
+              <use xlink:href="#pet"></use>
+            </svg>
+            <span>Pet Food and Supplies</span>
+          </a>
+        </li>
+      </ul>
+
+    </div>
+
+  </div>
+
+  <header>
+    <div class="navbar">
+      <div class="container">
+        <div class="navbar-left">
+          <a href="index.html" class="navbar-logo">
+            <img src="images/logo.svg" alt="logo">
+          </a>
+          <button class="navbar-toggler" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <nav class="navbar-menu">
+          <a href="index.html" class="nav-link active">Home</a><a href="shop.html" class="nav-link">Shop</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="navbar-right">
+          <a href="checkout.html" class="navbar-icon"><i class="fas fa-user"></i></a>
+          <a href="#" class="navbar-icon"><i class="fas fa-heart"></i></a>
+          <a href="cart.html" class="navbar-icon"><i class="fas fa-shopping-bag"></i></a>
+        </div>
+      </div>
+
+
+    </div>
+
+    <!-- Offcanvas Menu -->
+    <div class="offcanvas" id="offcanvasMenu">
+      <div class="offcanvas-header">
+        <h5>Menu</h5>
+        <button class="offcanvas-close" aria-label="Close">&times;</button>
+      </div>
+      <ul class="offcanvas-nav">
+        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+
+    </div>
+  </header>
+
+  <section class="jarallax py-5">
+    <img src="images/banner-1.jpg" class="jarallax-img">
+    <div class="hero-content py-0 py-md-5">
+      <div class="container-lg d-flex flex-column d-md-block align-items-center">
+        <nav class="breadcrumb">
+          <a class="breadcrumb-item nav-link" href="#">Home</a>
+          <a class="breadcrumb-item nav-link" href="#">Pages</a>
+          <span class="breadcrumb-item active" aria-current="page">Cart</span>
+        </nav>
+        <h1>Cart</h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container-lg">
+      <div class="row g-5">
+        <div class="col-md-8">
+
+          <div class="table-responsive cart">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col" class="card-title text-uppercase text-muted">Product</th>
+                  <th scope="col" class="card-title text-uppercase text-muted">Quantity</th>
+                  <th scope="col" class="card-title text-uppercase text-muted">Subtotal</th>
+                  <th scope="col" class="card-title text-uppercase text-muted"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- <tr>
+                  <td scope="row" class="py-4">
+                    <div class="cart-info d-flex flex-wrap align-items-center mb-4">
+                      <div class="col-lg-3">
+                        <div class="card-image">
+                          <img src="images/product-thumb-11.png" alt="product name" class="img-fluid">
+                        </div>
+                      </div>
+                      <div class="col-lg-9">
+                        <div class="card-detail ps-3">
+                          <h5 class="card-title">
+                            <a href="#" class="text-decoration-none">Product Name 1</a>
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="py-4">
+                    <div class="input-group product-qty w-50">
+                      <span class="input-group-btn">
+                        <button type="button" class="quantity-left-minus btn btn-light btn-number" data-type="minus">
+                          <svg width="16" height="16">
+                            <use xlink:href="#minus"></use>
+                          </svg>
+                        </button>
+                      </span>
+                      <input type="text" id="quantity" name="quantity" class="form-control input-number text-center"
+                        value="1">
+                      <span class="input-group-btn">
+                        <button type="button" class="quantity-right-plus btn btn-light btn-number" data-type="plus"
+                          data-field="">
+                          <svg width="16" height="16">
+                            <use xlink:href="#plus"></use>
+                          </svg>
+                        </button>
+                      </span>
+                    </div>
+                  </td>
+                  <td class="py-4">
+                    <div class="total-price">
+                      <span class="money text-dark">$150.00</span>
+                    </div>
+                  </td>
+                  <td class="py-4">
+                    <div class="cart-remove">
+                      <a href="#">
+                        <svg width="24" height="24">
+                          <use xlink:href="#trash"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row" class="py-4">
+                    <div class="cart-info d-flex flex-wrap align-items-center">
+                      <div class="col-lg-3">
+                        <div class="card-image">
+                          <img src="images/product-thumb-12.png" alt="product" class="img-fluid">
+                        </div>
+                      </div>
+                      <div class="col-lg-9">
+                        <div class="card-detail ps-3">
+                          <h5 class="card-title">
+                            <a href="#" class="text-decoration-none">Product Name 2</a>
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="py-4">
+                    <div class="input-group product-qty w-50">
+                      <span class="input-group-btn">
+                        <button type="button" class="quantity-left-minus btn btn-light btn-number" data-type="minus">
+                          <svg width="16" height="16">
+                            <use xlink:href="#minus"></use>
+                          </svg>
+                        </button>
+                      </span>
+                      <input type="text" id="quantity" name="quantity" class="form-control input-number text-center"
+                        value="1">
+                      <span class="input-group-btn">
+                        <button type="button" class="quantity-right-plus btn btn-light btn-number" data-type="plus"
+                          data-field="">
+                          <svg width="16" height="16">
+                            <use xlink:href="#plus"></use>
+                          </svg>
+                        </button>
+                      </span>
+                    </div>
+                  </td>
+                  <td class="py-4">
+                    <div class="total-price">
+                      <span class="money text-dark">$70.00</span>
+                    </div>
+                  </td>
+                  <td class="py-4">
+                    <div class="cart-remove">
+                      <a href="#">
+                        <svg width="24" height="24">
+                          <use xlink:href="#trash"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </td>
+                </tr> -->
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+        <div class="col-md-4">
+          <div class="cart-totals bg-grey py-5">
+            <h4 class="text-dark pb-4">Cart Total</h4>
+            <div class="total-price pb-5">
+              <table cellspacing="0" class="table text-uppercase">
+                <tbody>
+                  <tr class="subtotal pt-2 pb-2 border-top border-bottom">
+                    <th>Subtotal</th>
+                    <td data-title="Subtotal">
+                      <span class="price-amount amount text-dark ps-5">
+                        <!-- <bdi>
+                          <span class="price-currency-symbol">$</span>370.00
+                        </bdi> -->
+                      </span>
+                    </td>
+                  </tr>
+                  <tr class="order-total pt-2 pb-2 border-bottom">
+                    <th>Total</th>
+                    <td data-title="Total">
+                      <span class="price-amount amount text-dark ps-5">
+                        <!-- <bdi>
+                          <span class="price-currency-symbol">$</span>370.00</bdi> -->
+                      </span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="button-wrap row g-2">
+              <div class="col-md-6">
+                <button class="btn btn-dark py-3 px-4 text-uppercase btn-rounded-none w-100 btn-update-cart">
+                  Update Cart
+                </button>
+              </div>              
+              <div class="col-md-6"><a href="index.html"
+                  class="btn btn-dark py-3 px-4 text-uppercase btn-rounded-none w-100">Continue</a></div>
+              <div class="col-md-12"><a href="checkout.html"
+                  class="btn btn-primary py-3 px-4 text-uppercase btn-rounded-none w-100">Proceed to checkout</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="py-4">
+    <div class="container-lg">
+      <h2 class="my-4">People are also looking for</h2>
+      <a href="#" class="btn btn-warning me-2 mb-2">Blue diamon almonds</a>
+      <a href="#" class="btn btn-warning me-2 mb-2">Angie’s Boomchickapop Corn</a>
+      <a href="#" class="btn btn-warning me-2 mb-2">Salty kettle Corn</a>
+      <a href="#" class="btn btn-warning me-2 mb-2">Chobani Greek Yogurt</a>
+      <a href="#" class="btn btn-warning me-2 mb-2">Sweet Vanilla Yogurt</a>
+      <a href="#" class="btn btn-warning me-2 mb-2">Foster Farms Takeout Crispy wings</a>
+      <a href="#" class="btn btn-warning me-2 mb-2">Warrior Blend Organic</a>
+      <a href="#" class="btn btn-warning me-2 mb-2">Chao Cheese Creamy</a>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container-lg">
+      <div class="row row-cols-1 row-cols-sm-3 row-cols-lg-5">
+        <div class="col">
+          <div class="card mb-3 border border-dark-subtle p-3">
+            <div class="text-dark mb-3">
+              <svg width="32" height="32">
+                <use xlink:href="#package"></use>
+              </svg>
+            </div>
+            <div class="card-body p-0">
+              <h5>Free delivery</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-3 border border-dark-subtle p-3">
+            <div class="text-dark mb-3">
+              <svg width="32" height="32">
+                <use xlink:href="#secure"></use>
+              </svg>
+            </div>
+            <div class="card-body p-0">
+              <h5>100% secure payment</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-3 border border-dark-subtle p-3">
+            <div class="text-dark mb-3">
+              <svg width="32" height="32">
+                <use xlink:href="#quality"></use>
+              </svg>
+            </div>
+            <div class="card-body p-0">
+              <h5>Quality guarantee</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-3 border border-dark-subtle p-3">
+            <div class="text-dark mb-3">
+              <svg width="32" height="32">
+                <use xlink:href="#savings"></use>
+              </svg>
+            </div>
+            <div class="card-body p-0">
+              <h5>guaranteed savings</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-3 border border-dark-subtle p-3">
+            <div class="text-dark mb-3">
+              <svg width="32" height="32">
+                <use xlink:href="#offers"></use>
+              </svg>
+            </div>
+            <div class="card-body p-0">
+              <h5>Daily offers</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-5">
+    <div class="container-lg">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="footer-menu">
+            <img src="images/logo.svg" width="240" height="70" alt="logo">
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-6">
+          <div class="footer-menu">
+            <h5 class="widget-title">Organic</h5>
+            <ul class="menu-list list-unstyled">
+              <li class="menu-item">
+                <a href="about.html" class="nav-link">About us</a>
+              </li>
+              <li class="menu-item">
+                <a href="cart.html" class="nav-link">Shopping Cart</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6">
+          <div class="footer-menu">
+            <h5 class="widget-title">Quick Links</h5>
+            <ul class="menu-list list-unstyled">
+              <li class="menu-item">
+                <a href="shop.html" class="nav-link">Offers</a>
+              </li>
+              <li class="menu-item">
+                <a href="shop.html" class="nav-link">Shop</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6">
+          <div class="footer-menu">
+            <h5 class="widget-title">Customer Service</h5>
+            <ul class="menu-list list-unstyled">
+              <li class="menu-item">
+                <a href="contact.html" class="nav-link">Contact</a>
+              </li>
+              <li class="menu-item">
+                <a href="cart.html" class="nav-link">Delivery Information</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+
+      </div>
+    </div>
+  </footer>
+  <div id="footer-bottom">
+    <div class="container-lg">
+      <div class="row">
+        <div class="col-md-6 copyright">
+          <p>© 2024 FreshOrgano. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 credit-link text-start text-md-end">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="../../cdn.jsdelivr.net/npm/swiper%409/swiper-bundle.min.js"></script>
+  <script src="../../cdn.jsdelivr.net/npm/bootstrap%405.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+
+</html>
